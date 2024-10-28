@@ -39,11 +39,21 @@ h1, h2, h3, h4, h5 {
 #name-and-titles {
 	padding-bottom: 0;
 }
-
+#name {
+    margin-bottom: 0;
+}
+#email {
+    padding-bottom: 2vh;
+    margin: 0;
+}
 #img-container {
 	height: 30vh;
 	aspect-ratio: 1;
-	background-color: purple;
+    background-color: #111;
+}
+#self-image {
+    height: 30vh;
+    aspect-ratio: auto;
 }
 /* TODO: Ensure even vertical spacing between headers and paragraph sections */
 #bio-section {
