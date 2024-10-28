@@ -5,5 +5,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+<body id="introduction">
+<script>
+    function changeColor() {
+        document.getElementById('color-change').style.color = document.getElementById('color').value;
+    }
+    document.getElementById("submit").addEventListener("click", changeColor, false);
+</script>
+<div id="bio-section">
+    <p class="anon-pro" id="color-change">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet leo et nunc faucibus ultricies. Donec vel lectus nisl. Integer turpis sem, congue quis elementum sed, accumsan sed purus. Maecenas felis nunc, convallis ut commodo a, aliquet et est. Nam ornare aliquam est, sit amet iaculis sapien ultrices at. Vestibulum commodo dapibus vulputate. Integer sed ornare justo, quis pharetra mauris. Donec volutpat, eros ac auctor finibus, quam ipsum ultricies orci, a tincidunt purus eros vitae lorem. In hac habitasse platea dictumst.
+    </p>
+    <form id="colors">
+        <p>Change color:</p><input type="color" name="color" id="color" value="#000000">
+        <br>
+        <input id="submit" type="button" value="Submit" onclick="changeColor()"></input>
+    </form>
+</div>
+</body>
 </html>
